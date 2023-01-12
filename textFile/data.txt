@@ -1,0 +1,4 @@
+This is an ongoing project.
+
+Please input an folder containing an .OBJ file, along with accompanying .MTL and .JPEG files for a 3d rendering of the object.
+
