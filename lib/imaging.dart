@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:babylonjs_viewer/babylonjs_viewer.dart';
 
 class Imaging extends StatelessWidget {
   //const Imaging({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class Imaging extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
+            /*
             Expanded(
               child: Cube(
                 onSceneCreated: (Scene scene) {
@@ -22,6 +24,12 @@ class Imaging extends StatelessWidget {
                   ));
                   scene.camera.zoom = 8;
                 },
+              ),
+            ),
+             */
+            Expanded(
+              child: BabylonJSViewer(
+                src: path,
               ),
             ),
           ],
