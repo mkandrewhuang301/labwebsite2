@@ -14,7 +14,11 @@ class Imaging extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            /*
+            Expanded(
+              child: BabylonJSViewer(
+                src: path,
+              ),
+              /*
             Expanded(
               child: Cube(
                 onSceneCreated: (Scene scene) {
@@ -27,10 +31,6 @@ class Imaging extends StatelessWidget {
               ),
             ),
              */
-            Expanded(
-              child: BabylonJSViewer(
-                src: path,
-              ),
             ),
           ],
         ),
